@@ -1,0 +1,16 @@
+#nodejs-toolbar{
+    width:24px;
+    height:24px;
+}
+.nodejs-toolbar-gris{
+    background: url(imagenes/gris.png);
+}
+.nodejs-toolbar-verde{
+    background: url(imagenes/verde.png);
+}
+.nodejs-toolbar-rojo{
+    background: url(imagenes/rojo.png);
+}
+.nodejs-toolbar-amarillo{
+    background: url(imagenes/amarillo.png);
+}

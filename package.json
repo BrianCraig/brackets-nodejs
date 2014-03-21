@@ -1,0 +1,21 @@
+{
+    "name": "briancraig.nodejs",
+    "title": "Node.JS Simple Application Manager",
+    "version": "0.0.1",
+    "description": "Manage Node.JS Apps, one-click start/end",
+	"homepage": "https://github.com/braincraig/brackets-nodejs",
+    "author": "Brian Craig",
+    "license": "MIT",
+    "categories":"app",
+    "keywords": [
+        "nodejs",
+		"application"
+    ],
+    "files": [
+        "main.js",
+        "main.proc.js"
+    ],
+    "engines": {
+        "brackets": ">=0.35.0"
+    }
+}
