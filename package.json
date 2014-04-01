@@ -5,7 +5,7 @@
     "description": "Manage Node.JS Apps, one-click start/end",
 	"homepage": "https://github.com/briancraig/brackets-nodejs",
     "author": "Brian Craig <briancraigok@gmail.com>",
-    "license": "MIT",
+    "license": "LICENSE",
     "categories":"app",
     "keywords": [
         "nodejs",
