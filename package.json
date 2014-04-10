@@ -1,8 +1,8 @@
 {
     "name": "briancraig.nodejs",
     "title": "Node.JS Simple Application Manager",
-    "version": "0.0.2",
-    "description": "Manage Node.JS Apps, one-click start/end",
+    "version": "0.0.3",
+    "description": "Manage Node.JS Apps, one-click start/end. Warning: Beta extension",
 	"homepage": "https://github.com/briancraig/brackets-nodejs",
     "author": "Brian Craig <briancraigok@gmail.com>",
     "license": "LICENSE",

@@ -11,15 +11,19 @@ define(function (require, exports, module) {
         NodeDomain = brackets.getModule("utils/NodeDomain");
 
     /* Conexión */
-
+    var mensajes = Object.create(null);
     var nodeConnection = new NodeConnection();
     var path = ExtensionUtils.getModulePath(module, "main.proc");
     $(nodeConnection).on("simple.log", function (evt, ret) {
         if (ret.tipo === "cierre")
             procesos[ret.src] = false;
         toolbar.actualizar();
-        if (ret.tipo === "texto")
+        if (ret.tipo === "texto") {
+            if (mensajes[ret.src] === undefined)
+                mensajes[ret.src] = []
+            mensajes[ret.src].push(ret.texto);
             salida.appendOutput(ret.texto);
+        }
     });
     nodeConnection.connect(true);
     nodeConnection.loadDomains([path], true);
@@ -97,6 +101,8 @@ define(function (require, exports, module) {
         panelOut: null,
         elem: null,
         boton: null,
+        actual: null,
+        actualizar: function(src,txt){},
         appendOutput: function (output) {
             if (!this.panelOut) {
                 this.panelOut = this.PanelManager.createBottomPanel('braincraig.nodejs.output', $(this.panelOutHtml));
@@ -117,9 +123,7 @@ define(function (require, exports, module) {
             this.elem.append('<p>' + Mustache.render('{{row}}', {
                 row: output
             }) + '</p>');
-            this.elem.animate({
-                scrollTop: this.elem[0].scrollHeight
-            }, "fast");
+            this.elem[0].scrollTop = this.elem[0].scrollHeight;
         }
     }
 });
