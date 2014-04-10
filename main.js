@@ -74,7 +74,7 @@ define(function (require, exports, module) {
         },
         actualizar: function () {
             var doc = DocumentManager.getCurrentDocument();
-            if (!doc.file.isFile) return 0;
+            if (!doc || !doc.file.isFile) return 0;
             var doc = doc.file.fullPath
             if (procesos[doc] === undefined) //no existe
                 toolbar.estado("gris");
