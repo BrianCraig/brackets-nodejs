@@ -1,0 +1,32 @@
+#nodejs-toolbar{
+    width:18px;
+    height:18px;
+}
+.close{
+	opacity: 1;
+}
+.clean{
+	position: absolute;
+	font-size: 18px;
+	right: 30px;
+	top: 50%;
+	margin-top: -10px;
+	color: rgb(150, 0, 0);
+	text-decoration: none;
+}
+.clean:hover{
+	color: red;
+	text-decoration: none;
+}
+.nodejs-toolbar-gris{
+    background: url(imagenes/gris.png);
+}
+.nodejs-toolbar-verde{
+    background: url(imagenes/verde.png);
+}
+.nodejs-toolbar-rojo{
+    background: url(imagenes/rojo.png);
+}
+.nodejs-toolbar-amarillo{
+    background: url(imagenes/amarillo.png);
+}
