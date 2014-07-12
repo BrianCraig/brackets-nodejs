@@ -34,13 +34,21 @@
 
         case "terminarApp":
             try {
+<<<<<<< HEAD
                 procesos[entrada.src].kill(); // SIGTERM
+=======
+                procesos[entrada.src].kill(); // SIGTERM
+>>>>>>> master/master
             } catch (e) {}
             break;
         case "terminarApps":
             for (var x in procesos) {
                 try {
+<<<<<<< HEAD
                     procesos[x].kill(); // SIGTERM
+=======
+                    procesos[x].kill(); // SIGTERM
+>>>>>>> master/master
                 } catch (e) {}
             }
             break;
@@ -88,9 +96,17 @@
     process.on('exit', function () {
         for (var x in procesos) {
             try {
+<<<<<<< HEAD
                 procesos[x].kill('SIGKILL'); // SIGTERM
+=======
+                procesos[x].kill('SIGKILL'); // SIGTERM
+>>>>>>> master/master
             } catch (e) {}
         }
     });
 
+<<<<<<< HEAD
 }());
+=======
+}());
+>>>>>>> master/master
