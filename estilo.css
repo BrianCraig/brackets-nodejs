@@ -1,6 +1,20 @@
 #nodejs-toolbar{
-    width:24px;
-    height:24px;
+    width:18px;
+    height:18px;
+}
+.close{
+	opacity: 1;
+}
+.clean{
+	position: absolute;
+	font-size: 18px;
+	right: 30px;
+	color: rgb(150, 0, 0);
+	text-decoration: none;
+}
+.clean:hover{
+	color: red;
+	text-decoration: none;
 }
 .nodejs-toolbar-gris{
     background: url(imagenes/gris.png);

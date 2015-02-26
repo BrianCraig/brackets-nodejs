@@ -34,13 +34,13 @@
 
         case "terminarApp":
             try {
-                procesos[entrada.src].kill(); // SIGTERM 
+                procesos[entrada.src].kill(); // SIGTERM
             } catch (e) {}
             break;
         case "terminarApps":
             for (var x in procesos) {
                 try {
-                    procesos[x].kill(); // SIGTERM 
+                    procesos[x].kill(); // SIGTERM
                 } catch (e) {}
             }
             break;
@@ -88,7 +88,7 @@
     process.on('exit', function () {
         for (var x in procesos) {
             try {
-                procesos[x].kill('SIGKILL'); // SIGTERM 
+                procesos[x].kill('SIGKILL'); // SIGTERM
             } catch (e) {}
         }
     });

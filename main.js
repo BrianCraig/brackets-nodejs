@@ -109,6 +109,10 @@ define(function (require, exports, module) {
                 $('.close', $('#brackets-cmd-runner-output')).click(function () {
                     salida.panelOut.hide();
                 });
+					$('.clean', $('#brackets-cmd-runner-output')).click(function () {
+						$("#brackets-cmd-runner-console").html("");
+                });
+
                 $('#status-indicators').prepend('<div id="briancraig-nodejs-toggle">Node</div>');
                 this.boton = $('#briancraig-nodejs-toggle');
                 this.boton.click(function () {
